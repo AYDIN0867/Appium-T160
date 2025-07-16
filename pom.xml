@@ -27,14 +27,14 @@
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>9.4.0</version>
+            <version>7.6.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.33.0</version>
+            <version>3.141.59</version> <!-- veya 4.8.0+ -->
         </dependency>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>

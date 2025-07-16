@@ -1,4 +1,33 @@
 package day01;
 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.remote.MobileCapabilityType;
+import org.junit.Test;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 public class HesapMak {
+
+@Test
+public void hesapMak() throws MalformedURLException {
+    AndroidDriver<AndroidElement>driver;
+
+    DesiredCapabilities caps=new DesiredCapabilities();
+
+    caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Pixel 4-T160");
+    caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+    caps.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
+    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UIAutomator2");
+    caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UIAutomator2");//ios için "XCUITest" kullanılır
+    caps.setCapability(MobileCapabilityType.APP,"C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\Calculator_8.4 (503542421)_Apkpure (3).apk");
+
+    driver=new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),caps);
+    driver.manage().timeouts().implicitlyWait(20, TimeUnit.MICROSECONDS);
+}
+
+
 }
