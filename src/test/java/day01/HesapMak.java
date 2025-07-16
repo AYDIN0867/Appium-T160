@@ -12,11 +12,11 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class HesapMak {
-
+    AndroidDriver<AndroidElement>driver;
     //kulanic gerekli kurulumlari yapar
 @Test
 public void hesapMak() throws MalformedURLException {
-    AndroidDriver<AndroidElement>driver;
+
 
     DesiredCapabilities caps=new DesiredCapabilities();
 
