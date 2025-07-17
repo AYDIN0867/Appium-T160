@@ -19,8 +19,7 @@ public class ApkYukleme {
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel 4-T160");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");//ios için "XCUITest" kullanılır
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");//ios için "XCUITest" kullanılır
         caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\arabam-com-5-4-1.apk");
 
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
