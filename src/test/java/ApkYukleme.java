@@ -20,8 +20,10 @@ public class ApkYukleme {
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");//ios için "XCUITest" kullanılır
-        caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure.apk");
+       // caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure.apk");
 //C:\Users\Hp\IdeaProjects\Appium-T160\Apps\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure.apk
+        caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\To-Do List - Schedule Planner_1.02.61.0928_APKPure.apk");
+
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.MICROSECONDS);
 
