@@ -22,7 +22,7 @@ public class ApkYukleme {
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");//ios için "XCUITest" kullanılır
        // caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure.apk");
 //C:\Users\Hp\IdeaProjects\Appium-T160\Apps\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure.apk
-        caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\To-Do List - Schedule Planner_1.02.61.0928_APKPure.apk");
+        caps.setCapability(MobileCapabilityType.APP, "C:\\Users\\Hp\\IdeaProjects\\Appium-T160\\Apps\\all-currency-converter-3-9-0 (1).apk");
 
         driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.MICROSECONDS);
